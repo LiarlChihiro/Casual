@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.l-sidebar{
+.l-sidebar {
     position: absolute;
     left: 0;
     top: 0;
@@ -7,17 +7,20 @@
     width: 265px;
     background: #3d485d;
 }
-.vr-logo-box{
+
+.vr-logo-box {
     background-image: url(../image/logo-bg.png);
     background-repeat: repeat-y;
     height: 64px;
 }
-.vr-logo{
+
+.vr-logo {
     display: block;
     height: 100%;
     background: url(../image/logo.png) no-repeat 50% 50%;
 }
-.vr-courses-title{
+
+.vr-courses-title {
     height: 50px;
     line-height: 50px;
     text-align: center;
@@ -25,19 +28,22 @@
     font-size: 16px;
     background: #354052;
 }
+
 .vr-courses-list li {
     height: 58px;
     cursor: pointer;
     position: relative;
 }
-.vr-courses-item{
+
+.vr-courses-item {
     position: relative;
     padding-left: 58px;
     line-height: 58px;
     background: url(../image/cb-tubiao1.png) no-repeat 28px 3px;
     color: #a4afc3;
 }
-.vr-courses-list li:hover::before{
+
+.vr-courses-list li:hover::before {
     content: "";
     position: absolute;
     left: 0;
@@ -48,18 +54,22 @@
     background-size: 100% 100%;
     transition: width .5s;
 }
-.vr-courses-list li:hover .vr-courses-item{
+
+.vr-courses-list li:hover .vr-courses-item {
     color: #fff;
     background-image: url(../image/cb-gaoliang2.png);
 }
-.vr-courses-list li.ui-on{
+
+.vr-courses-list li.ui-on {
     color: #eff1f1;
     background: #4f5f79;
 }
-.vr-courses-list li.ui-on .vr-courses-item{
+
+.vr-courses-list li.ui-on .vr-courses-item {
     color: #eff1f1;
     background-image: url(../image/cb-gaoliang2.png);
 }
+
 .vr-courses-list li.ui-on::before {
     content: "";
     position: absolute;
@@ -71,24 +81,27 @@
     background-size: 100% 100%;
     transition: width .5s;
 }
-.l-content{
+
+.l-content {
     background: #edf2f6;
     height: 100%;
     margin-left: 265px;
 }
-.l-top{
-    height: 64px;
+
+.l-top {
     background: #fff;
     border-bottom: 1px solid #e2e2e2;
     position: relative;
-    padding-top: 20px;
+    padding: 20px 0;
 }
-.user-info__item{
+
+.user-info-item {
     position: relative;
     display: inline-block;
     padding: 0 16px;
 }
-.user-info__item::before {
+
+.user-info-item::before {
     content: "";
     position: absolute;
     width: 1px;
@@ -97,41 +110,64 @@
     top: -2px;
     bottom: -2px;
 }
-.user-info__item:first-child::before{
+
+.user-info-item:first-child::before {
     display: none;
 }
-.user-info__item .vr-icon{
+
+.user-info-item .vr-icon {
     display: inline-block;
     width: 22px;
     height: 22px;
     vertical-align: middle;
 }
-.user-info__txt{
+
+.user-info-txt {
     vertical-align: middle;
     font-size: 14px;
     color: #a0a0a0;
 }
-.vr-extend{
+
+.vr-extend {
     float: right;
-    margin: 16px 54px 0 0;
+    margin: -3px 54px 0 0;
     border: 1px solid #16a4fa;
     padding: 5px;
 }
-.vr-extend__txt{
+
+.vr-extend-txt {
     color: #16a4fa;
 }
-.vr-icon{
+
+.vr-icon {
     background: no-repeat;
     background-position: 50% 50%;
 }
-.vr-icon--ppl{
+
+.vr-icon-ppl {
     background-image: url(../image/username.png);
 }
-.vr-icon--info{
+
+.vr-icon-info {
     background-image: url(../image/user-id.png);
 }
-.l-main__hd{
+
+.l-main-hd {
     height: 50px;
     background: #fafbfd;
     border-bottom: 1px solid #e2e2e2;
+}
+
+.vr-tab-item {
+    float: left;
+    margin: 20px 25px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.vr-btn {
+    float: right;
+    margin: 20px 25px;
 }
